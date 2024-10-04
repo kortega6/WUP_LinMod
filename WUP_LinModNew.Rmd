@@ -152,3 +152,10 @@ anova_result <- anova(model.1, model.3)
 print(anova_result)
 ```
 The P-Value is less than 0.05 proving that the models are different. Model 2 is better than model 1 because the comparison is better.
+
+```{r}
+# Compare the two models using ANOVA
+anova_result <- anova(model.2, model.3)
+print(anova_result)
+```
+The P-Value is less than 0.05 proving that the models are different. Model 3 is better than model 2 because the comparison is better.
