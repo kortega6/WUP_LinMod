@@ -58,9 +58,16 @@ model.1=lm(SIMS~ARM, data=data)
 summary.lm(model.1)
 ```
 
-
+The model shows that the intercept and coefficient of ARM are both significantly different from 0.
 
 #### Predict at target point
+
+```{r}
+targtPoint = data.frame(GRIP=94, ARM=88)
+predictInt = predict(model.1, targtPoint, interval = 'prediction')
+print(predictInt)
+```
+
 
 
 #### scatterplot with model fit
