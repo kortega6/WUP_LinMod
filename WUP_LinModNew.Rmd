@@ -41,7 +41,7 @@ model.1=lm(SIMS~ARM, data=data)
 abline(model.1)
 ```
 
-This scatter plot shows a positive relationship between simulation score and arm strenght. Simulation strength increases as arm strength increases.
+This scatter plot shows a positive relationship between simulation score and arm strength. Simulation strength increases as arm strength increases.
 
 ### Numerical results
 
@@ -121,7 +121,7 @@ model.3 = lm(SIMS~ARM+GRIP, data=data)
 summary(model.3)
 ```
 
-Model.3 shows that the intercept -5.434, coefficient 0.038 of ARM, and coefficent of GRIP 0.025 are all sigificantly different from 0. Both have P-Values that are significantly different than 0, so they're helpful in predicting results.
+Model.3 shows that the intercept -5.434, coefficient 0.038 of ARM, and coefficient of GRIP 0.025 are all significantly different from 0. Both have P-Values that are significantly different than 0, so they're helpful in predicting results.
 
 ### Numerical results (cor)
 
@@ -137,7 +137,7 @@ Sims corelate with Arms in these models.
 predict(model.3, targtPoint,interval='prediction')
 ```
   
-
+This reflects ARM=88, GRIP=94 the predicted SIMS score is .15 the 95% conffidence interval the score is SIMS between -2.13 and 2.44
 
 ## Comparing nested models ANOVA Test
 
